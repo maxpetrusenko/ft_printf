@@ -15,6 +15,8 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# define FALSE 0
+# define TRUE 1
 
 void				*ft_memset(void *dst, int data, size_t len);
 void				ft_bzero(void *dst, size_t len);
@@ -105,9 +107,9 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstrev(t_list **alst);
 size_t				ft_lstcount(t_list *lst);
 char				*ft_itoa_base_for_uint(unsigned long long value,
-				int base, char c);
+					int base, char c);
 char				*ft_itoaf(uintmax_t n);
-char    			*ft_get_binary(unsigned char octet);
-int				ft_wcharlen(wchar_t wc);
+char				*ft_get_binary(unsigned char octet);
+int					ft_wcharlen(wchar_t wc);
 
 #endif

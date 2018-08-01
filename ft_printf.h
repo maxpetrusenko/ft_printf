@@ -6,7 +6,7 @@
 /*   By: mpetruse <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/24 14:25:26 by mpetruse          #+#    #+#             */
-/*   Updated: 2018/07/25 13:41:57 by mpetruse         ###   ########.fr       */
+/*   Updated: 2018/08/01 09:04:22 by mpetruse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include "libft/libft.h"
+# include <wchar.h>
 
 typedef struct		s_flags
 {
@@ -57,7 +58,6 @@ int					parse_width(char *fmt, size_t *i, va_list *ap,
 					t_param *spec);
 t_flags				parse_flags(char *fmt, size_t *i);
 t_param				*parse_params(char *ftm, va_list *ap, size_t *i);
-//void				ft_memalloc(void *src, size_t *size);
 int					ft_printf(char *fmt, ...);
 size_t				size_of_final_str(char *fmt, va_list *ap);
 long long			convert(t_param *arg, va_list *ap);
